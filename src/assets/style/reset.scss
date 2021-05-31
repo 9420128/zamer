@@ -1,0 +1,78 @@
+body {
+    font-size: 16px;
+}
+
+body,
+ul,
+li,
+button,
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    text-decoration: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+select,
+.textarea {
+    appearance: none;
+    box-shadow: none !important;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 1.9rem;
+    height: auto;
+    width: 100%;
+    border: 1px solid #bdc1c6;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+label.required {
+    position: relative;
+    display: inline-block;
+}
+label.required::before {
+    // font-family: 'Material-Icons';
+    content: '*';
+    color: rgb(24, 123, 209);
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 1em;
+    right: -0.5em;
+    display: inline-block;
+    height: 0;
+}
+
+.hidden,
+.zamer__drop.hidden {
+    display: none;
+}
+
+// .textarea {
+//     max-width: 100%;
+//     width: 100%;
+//     border: 1px solid #bdc1c6;
+//     padding: 0 10px;
+//     background: #fff;
+//     color: #666;
+//     transition: 0.2s ease-in-out;
+//     transition-property: color, background-color, border;
+//     font-size: 1.9rem;
+// }

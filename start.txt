@@ -1,0 +1,6 @@
+npm install -g @vue/cli
+
+vue ui
+
+
+<a href="yandexnavi://build_route_on_map?lat_to=59.9442543&amp;lon_to=30.5131509">Построить маршрут в Яндекс.Навигатор</a>

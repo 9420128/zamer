@@ -1,0 +1,245 @@
+.main-layout
+    // display: flex
+    // flex-direction: column
+    background: $bg-fon
+
+.header
+    background: white
+    border-bottom: 1px solid $border
+    box-shadow: 0 -1px 10px $border
+
+    &__btn:hover
+        background: $bg-hover
+
+.container
+    width: 100%
+    display: flex
+    width: 100%
+    display: flex
+    justify-content: space-between
+    height: $height
+    align-items: center
+    margin-left: auto
+    margin-right: auto
+
+.header__row
+    display: flex
+    align-items: center
+    height: $height
+
+    h1
+        font-size: 2rem
+        margin-left: $padding
+
+.col
+    padding: 0 $padding
+    display: flex
+
+.menu
+    position: relative
+    
+    &__drop
+        display: none
+        position: absolute
+        z-index: 2
+        top: 2.5em
+        right: 0
+        background: white
+        box-shadow: 1px 2px 6px #fff, 2px 6px 10px #999
+
+        a
+            padding: 1em 2em
+            color: inherit
+            display: block
+
+            &:hover,&.active
+                background: $bg-hover
+                color: black
+
+    &__drop.open
+        display: flex
+        flex-direction: column
+
+.fixed-btn
+    position: fixed
+    bottom: 45px
+    right: 24px
+    padding-top: 15px
+    margin-bottom: 0
+    z-index: 3
+
+    &__btn
+        color: #fff
+        background-color: $bg-1
+
+.btn-icon
+    width: 56px
+    height: 56px
+    display: inline-block
+    line-height: 54px
+    font-size: 15px
+    position: relative
+    overflow: hidden
+    transition: background-color .3s
+    vertical-align: middle
+    border-radius: 50%
+    text-align: center
+    letter-spacing: .5px
+    
+    i
+        line-height: 56px
+        font-size: 1.6rem
+
+
+.empty-layout
+    background: $bg-fon
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    top: 0
+    display: flex
+    flex-direction: column
+
+.modal,
+.home
+    background-color: #fafafa
+    width: 100%
+    display: flex
+    flex-direction: column
+    position: relative
+    margin: auto
+    flex: 1
+
+    &__content
+        padding: $padding
+        // overflow-y: auto
+        height: 100%
+
+    &__footer
+        position: fixed
+        background: white
+        left: 0
+        right: 0
+        bottom: 0
+        border-top: 1px solid $border
+        box-shadow: 0 -1px 10px $border
+
+    &__btn
+        width: 50%
+        height: 100%
+
+.input-field
+    margin-bottom: 3em
+    overflow: hidden
+    
+    *
+        display: block
+    
+    label
+        margin-bottom: 1em
+
+.height-4
+    height: 4em
+
+// ------------------------------------------------- notic ----------------------------------------
+.notic 
+    position: fixed
+    left: 50%
+    width: 370px
+    margin-left: -135px
+    z-index: 2
+    top: 10px
+    box-sizing: border-box
+    
+    &__block 
+        margin-top: -50px
+        opacity: 0
+        position: relative
+        padding: 1em
+        background-color: rgba(13, 37, 255, 0.822)
+        color: white
+        border-radius: 3px
+        display: block
+        transition: 0.2s
+
+
+.notic__block.error 
+    background: #fef4f6
+    color: #f0506e
+
+.notic__block
+    margin-top: 1em
+    opacity: 1
+
+
+.col-2
+    display: flex
+    justify-content: space-between
+
+    >*
+        width: 40%
+
+.home
+    padding: $padding
+    box-sizing: border-box
+
+    &__item
+        background: white
+        border: 1px solid #bdc1c6
+        border-radius: 4px
+
+.zamer
+    border-top: 1px solid #bdc1c6
+    display: flex
+    align-items: center
+    flex-wrap: nowrap
+    height: 134px
+
+    &__date
+        text-align: right
+        font-weight: bold
+        padding: 13px
+    
+    &__col-1
+        padding: 13px
+        width: 100%
+
+    &__col-2
+        display: flex
+        flex-direction: column
+        height: 100%
+        justify-content: space-evenly
+        position: relative
+
+        >a
+            padding: 0 1em
+
+.zamer__drop 
+    display: block
+
+    //  ------------------------ input-icon ------------------------//
+.inline
+    // display: inline-block
+    position: relative
+    max-width: 100%
+    vertical-align: middle
+    -webkit-backface-visibility: hidden
+
+    input
+        padding-right: 50px
+
+.input-icon
+    right: 0
+    left: auto
+    position: absolute
+    top: 0
+    bottom: 0
+    width: 50px
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    color: #333
+
+    i
+        font-size: 2rem

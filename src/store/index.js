@@ -1,12 +1,29 @@
 import { createStore } from 'vuex'
+import auth from './auth'
+import notic from '../function/notic'
+import zamer from './firebase'
+import status from './status'
 
 export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+    state: {
+        error: null,
+    },
+    mutations: {
+        setError(state, error) {
+            state.error = error
+        },
+        clearError(state) {
+            state.error = null
+        },
+    },
+    getters: {
+        error: (s) => s.error,
+    },
+    actions: {},
+    modules: {
+        auth,
+        notic,
+        zamer,
+        status,
+    },
 })
